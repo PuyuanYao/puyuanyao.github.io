@@ -3,7 +3,7 @@ title: Linear Regression
 date: 2023-8-12
 categories: [regression]
 tags: [linear regression]
-published: false
+published: true
 ---
 
 # Linear Regression
