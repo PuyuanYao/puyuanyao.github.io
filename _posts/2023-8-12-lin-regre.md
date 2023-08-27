@@ -8,10 +8,10 @@ tags: [linear regression]
 # Linear Regression
 Linear regression can be used when we want to approximate a set of data to a line or a hyperplane. In general there are three approches to this method. 
 We define dataset and parameters
-$$D = \{(x_1, y_1), (x_2, y_2),...,(x_n, y_n)\},$$
-$$W = \{w_1, w_2, ..., w_n\}.$$
+$$\{(x_1, y_1), (x_2, y_2),...,(x_n, y_n)\}\text{, where }x\in R^p$$
+$$\theta\in R^p.$$
 Therefore the function will be
-$$h(x) = \sum_{i=1}^{n}\theta_i x_i.$$
+$$h(x_i) = \theta^T x_i.$$
 To measure how well a certain line or hyperplane represents the data, we define the loss function
 $$L(\theta) = \sum_{i=0}^{n}(h(x_i)-y_i)^2.$$
 The goal would be finding a function that minimizes the loss function. 
