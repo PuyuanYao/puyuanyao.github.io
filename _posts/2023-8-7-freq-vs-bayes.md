@@ -3,6 +3,7 @@ title: Frequentist vs Bayesian
 date: 2023-8-7
 categories: [math foundation]
 tags: [MLE, MAP]
+math: true
 ---
 
 # Frequentist versus Bayesian

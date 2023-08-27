@@ -3,6 +3,7 @@ title: Geometric interpretation of Linear Regression
 date: 2023-8-12
 categories: [regression]
 tags: [linear regression]
+math: true
 published: false
 ---
 
