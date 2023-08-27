@@ -14,7 +14,7 @@ $$\{(x_1, y_1), (x_2, y_2),...,(x_n, y_n)\}\text{, where }x\in R^p$$
 
 $$\theta\in R^p.$$
 
-Therefore the function will be
+Therefore the function representing the line will be
 
 $$h(x_i) = \theta^T x_i.$$
 
@@ -22,15 +22,15 @@ To measure how well a certain line or hyperplane represents the data, we define 
 
 $$L(\theta) = \sum_{i=0}^{n}(h(x_i)-y_i)^2.$$
 
-The goal would be finding a function that minimizes the loss function. 
+The goal is to find a function that minimizes this loss function. 
 
 ## Gradient Decent
-Since the derivative represent the slop of the function, we can follow this slop all the way to a "top" or a "bottom" of a function where the derivative is zero. Of course we can just solve for the point where gradient equals zero, which we will talk about in next part. In this case, the function we care about is the loss function.   
+Since the derivative represents the slop of the function, we can follow this slop all the way to a "top" or a "bottom" of a function where the derivative is zero. Of course we can just solve for the point where gradient equals zero, which we will talk about in next part. In this case, the function we care about is the loss function.   
 For every derivative we take with respect to each parameter, we update the corresponding parameter $\theta_i$ towards the direction of that slop a step size of $\alpha$, the learning rate. 
 
 $$\theta_i := \theta_i - \alpha\frac{\partial}{\partial\theta_i}L(\theta).$$
 
-It is possible that gradient decent will lead you to a local maxima/minima, but it won't in this case. $L(\theta)$ is a convex quadratic function which has a only a global maximum. this means that you will always get to the optimum point eventually. 
+It is possible that gradient decent will lead you to a local maxima/minima, but it won't in this case. $L(\theta)$ is a convex quadratic function which has a only a global maximum. It means that you will always get to the optimum point eventually. 
 
 ## The normal equations
 As mentioned in last section, we could just directly solve for derivative of $L(\theta)$ equals zero. To do this, we have to represent $L(\theta)$ in matrix form.   
@@ -55,7 +55,7 @@ Y=
     \theta_1\\
     \theta_2\\
     ...\\
-    \theta_n\\
+    \theta_p\\
 \end{pmatrix}_{p\times 1},$$
 
 where each data $x_n$ has $p$ dimensions corresponded with $p$ parameters.  
@@ -81,7 +81,7 @@ L(\theta)&=\sum_{i=0}^{n}(h(x_i)-y_i)^2\\
 
 therefore the derivative will be
 
-$$\frac{\partial}{\partial\theta_i}L(\theta)=2X^TX\theta-2X^TY,$$
+$$\frac{\partial}{\partial\theta}L(\theta)=2X^TX\theta-2X^TY,$$
 
 solve for the derivative equals to zero gets
 

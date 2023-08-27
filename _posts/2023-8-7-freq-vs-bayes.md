@@ -8,7 +8,7 @@ math: true
 
 # Frequentist versus Bayesian
 
-When treating data as a result of sampling from a probability distribution, it is natural to introduce statistical methods to machine learning algorithms. Frequentist and Bayesian have different views on the parameters that determine the distribution. Frequentist believes parameters are unknown value while Bayesian believes parameters are random variables. Therefore, even though they both care about what parameters maximises the probability of given data, their approaches are different. 
+When treating data as a result of sampling from a probability distribution, it is natural to introduce statistical methods to machine learning algorithms. Frequentist and Bayesian have different views on the parameters that determine the distribution. Frequentist believes that parameters are unknown values while Bayesian believes that parameters are random variables that follows some distribution. Therefore, even though they both care about what parameters maximises the probability of given data, their approaches are different. 
 
 Given dataset $X$ and parameters $\theta$
 
@@ -26,7 +26,7 @@ since $P(X)=\int_\theta P(X\mid\theta)P(\theta)\text{ }d\theta\text{, }$
 
 $$\theta_{MAP}=P(X\mid\theta)P(\theta)$$
 
-It also make sense by using joint probability since $\theta$ and $X$ are both random variables. 
+It also makes sense by using joint probability since $\theta$ and $X$ are both random variables. 
 
 $$\theta_{MAP}=\arg\max_\theta P(X,\theta)=\arg\max_\theta P(X\mid\theta)P(\theta)$$
 
