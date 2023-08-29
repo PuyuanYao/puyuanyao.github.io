@@ -6,7 +6,6 @@ tags: [linear regression]
 math: true
 ---
 
-# Linear Regression
 Linear regression can be used when we want to approximate a set of data to a line or a hyperplane. In general there are three approches to this method. 
 We define dataset and parameters
 
