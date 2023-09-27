@@ -6,7 +6,7 @@ tags: [MLE, MAP]
 math: true
 ---
 
-When treating data as a result of sampling from a probability distribution, it is natural to introduce statistical methods to machine learning algorithms. Frequentist and Bayesian have different views on the parameters that determine the distribution. Frequentist believes that parameters are unknown values while Bayesian believes that parameters are random variables that follows some distribution. Therefore, even though they both care about what parameters maximises the probability of given data, their approaches are different. 
+When treating data as a result of sampling from a probability distribution, it is natural to introduce statistical methods to machine learning algorithms. Frequentist and Bayesian have different views on the parameters that determine the distribution. Frequentist believes that parameters are unknown values while Bayesian believes that parameters are random variables that follows some distribution. Therefore, even though they both care about what parameters maximizes the probability of given data, their approaches are different. 
 
 Given dataset $X$ and parameters $\theta$
 
